@@ -1,0 +1,269 @@
+* IDENTIFICADOR -> Para itens únicos
+* CLASSE -> Para itens repetidos
+
+
+<DOCTYPE html> Define que o navegador leia a últimas atualizações de html
+<meta charset"UTF-8">
+TAG:META  / ATRIBUTO:CHARSET   / DICIONARIO UTF8 
+
+<head> informações passadas para o navegador (nome da aba)
+<header> conteúdo de cabeçalho na página
+<body> conteúdo da página
+
+
+<p> parágrafo
+<strong> enfase
+<em> itálico
+<a> ancora p/ linkar outra pagina, um link
+<nav> para navegação na internet
+
+CSS: estilo (USAR CSS RESET PARA LIMPAR O NAVEGADOR)
+
+IN LINE (APENAS NA LINHA APLICADA)
+
+* Tamanho do texto
+<p style="font-size: 20px"> TEXTO AQUI </p>
+tradução: dentro do p (parágrafo) adicionei um estilo de fonte, atribui 20px, que é o aumento da fonte para 20 pixels
+
+* Local/alinhamento do texto
+<h1 style="text-align: center">TEXTO AQUI</h1>
+tradução: colocar o texto no centro da tela
+
+* Para adicionar cor de fundo à uma linha
+<p style="background: #cccccc"> TEXTO AQUI </p>
+                      COR QUE EU QUERO
+
+* Para colocar duas ou mais informações de CSS:
+<p style="font-size: 20px; text-align: center"> TEXTO AQUI </p>
+tradução: tamanho da fonte;   alinhamento;
+
+CRIANDO ARQUIVO .CSS CRIA-SE UM ARQUIVO P/ PREENCHER APENAS COM INFORMAÇÕES CSS
+
+* Para criar um padrão de estilo para vários parágrafos
+/Fazer isso dentro do arquivo CSS/
+
+<style>
+    p {
+        text-align: center
+    }
+</style>
+
+*Para linkar endereço de referencia CSS no HTML
+<link rel="stylesheet" href="style.css">
+                       referencia=NOME DO ARQUIVO CSS
+
+
+
+
+*Para mover o tamanho de fonte (font-size) para o arquivo CSS, 
+utiliza-se a sigla: * id="nomeQueDEsejar" *
+
+exemplo:
+<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+tradução: no parágrafo <p> que começa com o texto "Nossa missão é:..." definimos o * id="missao" *
+
+chamaremos esse id no arquivo CSS:
+#missao {
+    font-size: 20px;
+}
+
+* Para colocar cor em uma tag específica, aqui no caso,a tag STRONG e EM
+/Fazer isso dentro do arquivo CSS/
+
+em strong {
+    color: red;
+}
+
+
+*REPRESENTAR CORES NO CSS: HEXADECIMAL   /      RGB   / NOME DAS CORES
+                               #ff0000     (255,0,0)               red
+
+
+
+* CONCEITO HEXADECIMAL P/ CORES EM CSS
+
+Hexadecimal = 0123456789ABCDEF
+
+RGB = RED GREEN BLUE
+
+# _ _ _ _ _ _
+  R R G G B B
+
+0 = ausencia de cor
+f = máximo de cor
+
+preto = #000000 (todas as casas não possuem cor, ou seja, 0)
+branco = #ffffff (todas as casas possuem o máximo de cor, ou seja, f)
+
+vermelho = #ff0000 
+
+# f f 0 0 0 0
+  R R G G B B
+
+(maximo da cor vermelha, ou seja f, e nenhuma outra cor, ou seja, verde e azul 0)
+
+* CONCEITO RGB P/ CORES EM CSS
+
+RGB = 0,1,2,3,4,5...255
+
+rgb(_ _ _ _,_ _ _ _,_ _ _ _)
+    red,      green,   blue
+
+0 = ausencia de cor
+255 = máximo de cor
+
+branco:
+rgb(255,255,255)
+
+preto:
+rgb(0,0,0)
+
+vermelho:
+rgb(255,0,0)
+
+verde:
+rgb(0,255,000)
+
+azul:
+rgb(0,0,255)
+
+* IMAGEM NO CSS
+
+<img src="imagemAqui.jpg">
+   fonte= endereço da imagem
+
+* DIMENSÕES NO CSS
+1 - Largura
+2 - Altura
+3 - Epassamento interno
+4 - Espassamento externo 
+
+
+*ALTERAR TAMANHO DE IMAGEM - LARGURA
+
+comando -> widht: numero %
+
+ex:
+
+#banner {
+    width: 100%;
+}
+
+Traduzindo:
+#nome do identificador {
+
+                     comando: quanto eu quero que apareça na tela %;
+}
+
+
+* CRIAR LISTA
+
+<ul> UNDERNED LIST (LISTA NÃO ORDENADA)
+<ol> ORDENED LIST (LISTA ORDENADA)
+
+<li> LIST ITEM (LISTA CADA ITEM DA LISTA)
+
+* CRIAR CLASSE EM CSS / CHAMADA NO ARQUIVO HTML
+
+Exemplo dentro do item listado de uma lista:
+
+<li class="itens">Atendimento aos Clientes</li>
+tradução: item listado  / classe = nome da classe  / TEXTO AQUI / encerra
+
+
+* CRIAR ESTILO DENTRO CLASSE EM CSS / CRIAÇÃO DENTRO DO ARQUIVO CSS
+
+.nome da classe {
+             ação do estilo:conteudo do estilo;
+}
+       
+exemplo:
+
+.itens {
+    font-style:italic;
+}
+
+
+*DIVISÃO EM HTML
+<div> -> Não interfrere na apresentação visual do conteudo, serve para marcar o conteudo e a partir disso no CSS criar os efeitos que quiser.
+
+* IDENTIFICADOR -> Para itens únicos
+* CLASSE -> Para itens repetidos
+
+*CRIANDO INLINE DENTRO DO BLOCO
+
+ul { 
+    display: inline-block;
+}
+
+*ALINHAR LINHA -> vertical-align: LUGAR
+
+ex:
+ul { 
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+*ESPAÇAMENTO INTERNO DENTRO DO BLOCO -> padding: NUMEROpx;
+
+ex:
+.beneficios{
+    background: #ffffff;
+    padding: 20px;
+}
+
+tradução:
+.classe{
+    background: branco;
+    padding: 20px; (respiro de 20px na borda dentro do bloco)
+}
+
+*CRIANDO LINK NO HTML
+
+<a href="contato.html">Contatos</a>
+<comando local="nomeDoArquivo.html">TEXTO AQUI</a>
+
+*CRIANDO NAVEGAÇÃO PARA LINKS DA LISTA EM HTML <nav> 
+
+            <nav>
+                <ul>
+                    <li><a href="vscode_barbearia_index.html">Home</a></li>
+                    <li><a ref="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+
+*TORNANDO LISTA EM HORIZONTAL (display: inline;)
+
+nav li{
+    display: inline;
+}
+
+TAG DE NAVEGAÇÃO DA MINHA LISTA{
+                              display: inline;
+}
+
+
+*ESTILIZANDO LETRAS EM FORMATO CAPS
+
+nav a{
+    text-transform: uppercase;
+}
+
+TAG DE NAVEGAÇÃO DA MINHA LINHA{
+                              text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+

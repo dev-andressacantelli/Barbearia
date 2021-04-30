@@ -1,0 +1,63 @@
+body {
+    
+}
+
+/** IDENTIFICADOR: CHAMANDO O ID, ESTILIZANDO PARA OCUPAR 100% DA LARGURA DA PAGINA **/
+#banner {
+    width: 100%;
+}
+
+/** CLASSE: CRIANDO FUNDO CINZA COM RESPIRO DE 30px **/
+.principal{
+    background: #cccccc;
+    padding: 30px;
+}
+
+/** CLASSE: ESTILIZANDO O TITULO COM RECUO DE 20xp P/ A ESQUERDA  **/
+.titulo-principal{
+    padding-left: 20px;
+}
+
+/** CLASSE: CENTRALIZANDO O TITULO **/
+.titulo-centralizado {
+    text-align: center
+}
+
+/** ESTILIZANDO O PARÁGRAFO, ALINHAMENTO DO TEXTO AO CENTRO **/
+p {
+    text-align: center;
+}
+
+/** IDENTIFICADOR: ESTILIZANDO O ID, AUMENTANDO O TAMANHO DA FONTE P/ 20xp **/
+#missao {
+    font-size: 20px;
+}
+
+/** ESTILIZANDO A FRASE QUE UTILIZA STRONG, TORNANDO ITÁLICO **/
+em strong {
+    color:#ff0000;
+}
+
+/** CLASSE: ESTILIZANDO TUDO O QUE TEM NA CLASSE EM ITÁLICO **/
+.itens {
+    font-style:italic;
+}
+
+/** CLASSE: ESTILIZANDO P/ FUNDO BRANCO E ESPAÇAMENTO DE 20xp **/
+.beneficios{
+    background: #ffffff;
+    padding: 20px;
+}
+
+/** ESTILIZANDO A INLINE DENTRO DO BLOCO DE LISTA **/
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+/** CLASSE: IMAGEM OCUPANDO 50% DA PAGINA **/
+.imagembeneficios {
+    width: 50%;
+}

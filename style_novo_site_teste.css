@@ -1,0 +1,107 @@
+
+/* DEFINE O ESTILO DO CABEÇALHO */
+header {
+    background: #02f5c0;
+    padding: 20px 0; /* ESPAÇO INTERNONA MARGEM */
+}
+
+/* CLASSE FEITA P CRIAR UMA CAIXA INVISIVEL ENTRE O LOGO ALURA E A LISTA HORIZONTAL: HOME - PRODUTOS - CONTATOS */ 
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* DEFINE O ESTILO DA LISTA EM NAVEGAÇÃO */
+nav {
+    position: absolute;
+    top: 110px; /*DISTANCIA DO TOPO P O INICIO DA LISTA HORIZONTAL */
+    right: 0;
+}
+
+/* DEFINE O ESTILO DA LISTA EM NAVEGAÇÃO */
+nav li {
+    display: inline; /** DEIXAR A LISTA DE NAVEGAÇÃO EM ALINHAMENTO HORIZONTAL **/
+    margin: 0 0 0 15px; /** TOPO / DIREITA / BAIXO / ESQUERDA **/
+}
+
+/* DEFINE O ESTILO DAS LETRAS DA LISTA DE NAVEGAÇÃO -> NAV (NAVEGAÇÃO) A (ANCORA, LINK) */
+nav a {
+    text-transform: uppercase; /** TEXTO EM CAPS **/
+    color: #000000; /* COR DO TXT */
+    font-weight: bold; /* NEGRITO */
+    font-size: 22px; /* TAMANHO */
+    text-decoration: none; /* SEM MARCAÇÃO EMBAIXO __ */
+}
+
+/* MAPEAR COMPORTAMENTO DE QUANDO O MOUSE ESTÁ EM CIMA DO ELEMENTO */ 
+nav a:hover {
+    color: #d303ee; /* DEFINE A COR DE QDO O MOUSE PASSAR POR CIMA */
+    text-decoration: underline; /* DEFINE UNDERLINE QDO O MOUSE PASSAR POR CIMA */
+}
+
+/* CLASSE QUE DETERMINA OS ESPAÇAMENTOS DOS ICONES */
+.produtos {
+    width: 940px; /* LARGURA FIXA */
+    margin: 0 auto; /* ESPAÇAMENTO LATERAL 0 P CIMA E P BAIXO / AUTOMATICO P LADOS */
+    padding: 50px 0; /* ESPAÇAMENTO INTERNO DO ICONE DE 50 P CIMA E P BAIXO / 0 P LADOS */
+}
+
+/* CLASSE QUE DETERMINA O ESTILO PRINCIPAL DOS ICONES */ 
+.produtos li {
+    display: inline-block; /* TORNANDO ICONES DA LISTA EM LINHA EM BLOCO, OU SEJA, TORNANDO-OS HORIZONTAIS */ 
+    text-align: center; /* ALINHAMENTO DO ICONE AO CENTRO */
+    width: 30%; /* CADA ICONE OCUPA 30% DO BLOCO TOTAL DA LISTA EM BLOCO QUE É 100% (COMO SE FOSSE 1/3) */
+    vertical-align: top; /* ALINHAMENTO DE CIMA P BAIXO (O DEFAULT É ALINHAR DEBAIXO P CIMA) */
+    margin: 0 1.5%; /* ESPAÇAMENTO ENTRE UM ICONE E OUTRO, 0 P CIMA E BAIXO, 1.5 P/ AS LATERAIS */
+    padding: 30px 20px; /* ESPAÇAMENTO INTERNO DO ICONE, 30 P CIMA E BAIXO, 20 P LATERAIS */
+    box-sizing: border-box; /* DEFINIÇÃO P/ QUE O NAVEGADOR AJUSTE A PORCENTAGEM WIDTH COM O PADDING, OU SEJA, PORCENTAGEM DO ICONE + PX DA BORDA */
+    border: 5px dotted #000000;
+    /* TAMANHO DA LINHA DA BORDA / ESTILO OU TIPO DA BORDA / COR DA BORDA; 
+    _____________________________SOLID É ESTILO RETO, PORÉM EXISTE ESTILOS COMO DASHAD ---- , DOTTED ..... ETC) */
+
+    /* FORMA DE DECLARAR O ESTILO DA BORDA PONTO A PONTO
+    border-color: #000000;  (COR DA BORDA DO ICONE)
+    border-width: 2px; (TAMANHO DA BORDA DO ICONE, 2 DE LARGURA)
+    border-style: solid; (ESTILO OU TIPO DA BORDA DO ICONE) */
+
+    border-radius: 10px 60px 10px 60px; /* ADICIONA PARTE CURVA EM TODAS AS PONTAS DA BORDA
+    CASO PRECISE DE TAMANHOS DIFERENTES PARA CADA PONTA, DETERMINAR O VALOR DA SEGUINTE MANEIRA:
+    border-radius: 10px 60px 10px 60px; (exemplo de valores, isso não é uma constante)
+    CANTO SUP ESQUERDO / CANTO SUP DIREITO / CANTO INFERIOR DIREITO / CANTO INFERIOR ESQUERDO */
+}
+
+/* DENTRO DA CLASSE PRODUTOS LI, O HOVER AGE QUANDO O MOUSE PASSAR POR CIMA */
+.produtos li:hover {
+    border-color: #c719c7; /* COR DA BORDA DOS ICONES */
+}
+
+/* DENTRO DA CLASSE PRODUTOS LI, O ACTIVE AGE QUANDO O MOUSE ESTIVER PRESSIONADO */
+.produtos li:active {
+    border-color: #0de98d;
+}
+
+/* DENTRO DA CLASSE PRODUTOS LI, O HOVER AGE QUANDO O MOUSE PASSAR POR CIMA */
+.produtos li:hover h2 {
+    font-size: 34px; /* QUANDO O MOUSE ESTIVER POR CIMA DO LI PRODUTOS, O H2 (TITULO) VAI FICAR MAIOR */
+}
+
+/*CLASSE QUE DETERMINA O ESTILO DO TITULO DOS ICONES */
+.produtos h2 {
+    font-size: 30px; /* TAMANHO DA LETRA DENTRO DO ICONE */
+    font-weight: bold; /* TIPO NEGRITO P LETRA DENTRO DO ICONE */
+}
+
+/*CLASSE QUE DETERMINA O ESTILO DA DESCRIÇÃO DOS ICONES */
+.produto-descricao{
+    font-size: 18px;
+}
+
+/* CALSSE QUE DETERMINA O ESTILO DO PREÇO DOS ICONES */
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px; /* ESPAÇAMENTO DO PREÇO, 10 P CIMA, FORMA SIMPLIFICADA */
+    /* MARGIN TOP PODERIA SER ESCRITO TBM DA MANEIRA MAIS COMPLETA:
+    margin: 10px 0 0; (ESPAÇAMENTO DO PREÇO, 10 P CIMA, 0 P BAIXO, 0 P LATERAIS) */
+}
